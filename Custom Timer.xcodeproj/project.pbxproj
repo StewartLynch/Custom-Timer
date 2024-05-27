@@ -11,6 +11,10 @@
 		BB2AF55D2C043C97007707EE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2AF55C2C043C97007707EE /* ContentView.swift */; };
 		BB2AF55F2C043C98007707EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB2AF55E2C043C98007707EE /* Assets.xcassets */; };
 		BB2AF5622C043C98007707EE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB2AF5612C043C98007707EE /* Preview Assets.xcassets */; };
+		BB2AF5692C043CC7007707EE /* TimerObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2AF5682C043CC7007707EE /* TimerObject.swift */; };
+		BB2AF56B2C04401C007707EE /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2AF56A2C04401C007707EE /* TimerView.swift */; };
+		BB2AF56D2C044928007707EE /* ReadSizeViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2AF56C2C044928007707EE /* ReadSizeViewExtension.swift */; };
+		BB2AF56F2C04525A007707EE /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB2AF56E2C04525A007707EE /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		BB2AF55C2C043C97007707EE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BB2AF55E2C043C98007707EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB2AF5612C043C98007707EE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BB2AF5682C043CC7007707EE /* TimerObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerObject.swift; sourceTree = "<group>"; };
+		BB2AF56A2C04401C007707EE /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		BB2AF56C2C044928007707EE /* ReadSizeViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadSizeViewExtension.swift; sourceTree = "<group>"; };
+		BB2AF56E2C04525A007707EE /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +61,11 @@
 			children = (
 				BB2AF55A2C043C97007707EE /* Custom_TimerApp.swift */,
 				BB2AF55C2C043C97007707EE /* ContentView.swift */,
+				BB2AF5682C043CC7007707EE /* TimerObject.swift */,
+				BB2AF56A2C04401C007707EE /* TimerView.swift */,
 				BB2AF55E2C043C98007707EE /* Assets.xcassets */,
+				BB2AF56C2C044928007707EE /* ReadSizeViewExtension.swift */,
+				BB2AF56E2C04525A007707EE /* Launch Screen.storyboard */,
 				BB2AF5602C043C98007707EE /* Preview Content */,
 			);
 			path = "Custom Timer";
@@ -125,6 +137,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB2AF56F2C04525A007707EE /* Launch Screen.storyboard in Resources */,
 				BB2AF5622C043C98007707EE /* Preview Assets.xcassets in Resources */,
 				BB2AF55F2C043C98007707EE /* Assets.xcassets in Resources */,
 			);
@@ -138,7 +151,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB2AF55D2C043C97007707EE /* ContentView.swift in Sources */,
+				BB2AF5692C043CC7007707EE /* TimerObject.swift in Sources */,
+				BB2AF56B2C04401C007707EE /* TimerView.swift in Sources */,
 				BB2AF55B2C043C97007707EE /* Custom_TimerApp.swift in Sources */,
+				BB2AF56D2C044928007707EE /* ReadSizeViewExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +294,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -307,6 +324,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

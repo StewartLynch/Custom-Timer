@@ -13,14 +13,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    let timerObject = TimerObject(timerColor: .red, length: 10)
+    let timerObject2 = TimerObject(timerColor: .green, length: 70)
+    let timerObject3 = TimerObject(timerColor: .blue, length: 20)
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            HStack {
+                TimerView(timerObject: timerObject, controls: true)
+                TimerView(timerObject: timerObject2, controls: true)
+            }
+            TimerView(timerObject: timerObject3, controls: false)
+                .frame(width: 250)
         }
-        .padding()
+        .onAppear {
+            Task {
+                try await Task.sleep(for: .seconds(5))
+                timerObject3.startTimer()
+            }
+        }
     }
 }
 
