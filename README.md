@@ -1,6 +1,6 @@
 ## Custom Timer
 
-![mac128](Images/mac128.png)This repository contains the completed source code for the Custom Timer video.
+![mac128](Images/mac128.png)This is a development branch where I have edited the button modifier that will scale the size of the buttons should the timer get larger.  They well never get smaller than the recommended sizes in the Human Interface Guidelines though.
 
 
 

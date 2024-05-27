@@ -22,8 +22,8 @@ struct ContentView: View {
                 TimerView(timerObject: timerObject, controls: true)
                 TimerView(timerObject: timerObject2, controls: true)
             }
-            TimerView(timerObject: timerObject3, controls: false)
-                .frame(width: 250)
+            TimerView(timerObject: timerObject3, controls: true)
+                .frame(width: 300)
         }
         .onAppear {
             Task {

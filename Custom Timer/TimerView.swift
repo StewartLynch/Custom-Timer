@@ -15,7 +15,7 @@ import SwiftUI
 struct TimerView: View {
     let timerObject: TimerObject
     let controls: Bool
-    @State private var width: CGFloat = 0
+    @State private var width: CGFloat = 0393/5
     var body: some View {
         VStack {
             ZStack {
@@ -61,21 +61,24 @@ struct TimerView: View {
                     } label: {
                         Image(systemName: "play.fill")
                     }
-                    .modifier(ControlButtonStyle(color: timerObject.timerColor, disabled: timerObject.playButtonDisabled))
+                    .modifier(ControlButtonStyle(color: timerObject.timerColor, disabled: timerObject.playButtonDisabled, width: width))
                     Button {
                         timerObject.stopTimer()
                     } label: {
                         Image(systemName: "pause.fill")
                     }
-                    .modifier(ControlButtonStyle(color: timerObject.timerColor, disabled: timerObject.pauseButtonDisabled))
+                    .modifier(ControlButtonStyle(color: timerObject.timerColor, disabled: timerObject.pauseButtonDisabled, width: width))
                     Button {
                         timerObject.resetTimer()
                     } label: {
                         Image(systemName: "gobackward")
                     }
-                    .modifier(ControlButtonStyle(color: timerObject.timerColor, disabled: timerObject.resetButtonDisabled))
+                    .modifier(ControlButtonStyle(color: timerObject.timerColor, disabled: timerObject.resetButtonDisabled, width: width))
                 }
             }
+        }
+        .onAppear {
+            print("\(width)")
         }
     }
     
@@ -93,11 +96,12 @@ struct TimerView: View {
 struct ControlButtonStyle: ViewModifier {
     let color: Color
     let disabled: Bool
+    let width: CGFloat
     func body(content: Content) -> some View {
         content
-            .font(.title)
+            .font(.system(size: max(width / 14 , 28)))
             .bold()
-            .frame(width: 50, height: 50)
+            .frame(width: max(width / 8 , 50), height: max(width / 8 , 50))
             .background(color).opacity(disabled ? 0.5 : 1)
             .foregroundStyle(.white)
             .clipShape(Circle())
