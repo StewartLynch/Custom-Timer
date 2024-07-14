@@ -2,7 +2,9 @@
 
 ![mac128](Images/mac128.png)This repository contains the completed source code for the Custom Timer video.
 
-
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=dskxfuSlEAw
+" target="_blank"><img src="http://img.youtube.com/vi/dskxfuSlEAw/0.jpg" 
+alt="Custom Timer" width="480" height="360" border="1" /></a>
 
 </a>
 
